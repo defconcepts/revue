@@ -12,9 +12,6 @@ new Vue({
       todo: ''
     }
   },
-  ready () {
-    this.$subscribe('todos')
-  },
   methods: {
     toggleTodo (index) {
       this.$revue.dispatch({type: 'TOGGLE_TODO', index})

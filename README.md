@@ -35,10 +35,6 @@ new Vue({
       counter: this.$revue.getState().counter
     }
   },
-  ready () {
-    // subscribe state changes
-    this.$subscribe('counter')
-  },
   methods: {
     handleClickCounter () {
       // dispatch events

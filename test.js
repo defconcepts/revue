@@ -17,7 +17,6 @@ describe('main', () => {
         }
       },
       created () {
-        this.$subscribe('todos')
         this.$revue.dispatch({type: 'ADD_TODO', text: 'hi'})
       }
     })
